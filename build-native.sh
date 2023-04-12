@@ -48,5 +48,5 @@ if [ -z "$_CMakeOsxArchitectures" ]; then
 fi
 
 cmake $implementations -DCMAKE_OSX_ARCHITECTURES="$_CMakeOsxArchitectures" -DCMAKE_OSX_DEPLOYMENT_TARGET=10.13 -DCMAKE_BUILD_TYPE=$_CMakeBuildType ../..
-make
+cmake --build .
 popd
